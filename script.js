@@ -23,4 +23,15 @@ document.getElementById('imageForm').addEventListener('submit', function(event) 
 
     // Draw the text in the center
     ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+
+    // Show the download button
+    document.getElementById('downloadBtn').style.display = 'inline-block';
+});
+
+document.getElementById('downloadBtn').addEventListener('click', function() {
+    const canvas = document.getElementById('canvas');
+    const link = document.createElement('a');
+    link.download = 'generated-image.png';
+    link.href = canvas.toDataURL();
+    link.click();
 });
