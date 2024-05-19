@@ -1,60 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kozhikode Guide</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Add Google Fonts for improved typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6697189304791023"
-     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
     <div class="container">
-      <h1>Explore Kozhikode</h1>
+        <h1>Image Generator</h1>
+        <form id="imageForm">
+            <label for="background">Background Color:</label>
+            <input type="color" id="background" name="background" value="#ffffff">
+
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="text" placeholder="Enter text here">
+
+            <label for="textColor">Text Color:</label>
+            <input type="color" id="textColor" name="textColor" value="#000000">
+
+            <button type="submit">Generate Image</button>
+        </form>
+        <canvas id="canvas" width="500" height="500"></canvas>
     </div>
-  </header>
 
-  <main>
-    <section class="tourist-places section">
-      <div class="container">
-        <h2>Tourist Places</h2>
-        <ul>
-          <li>Kappad Beach <span class="rating">(4.4 stars)</span></li>
-          <li>Kozhikode Beach <span class="rating">(4.5 stars)</span></li>
-          <li><a href="http://www.sargaalaya.in/">Sargaalaya Kerala Arts & Crafts Village</a> <span class="rating">(4.3 stars)</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="hotels section">
-      <div class="container">
-        <h2>Hotels</h2>
-        <ul>
-          <li><a href="https://www.google.com/travel/hotels/entity/CgoI-L6Iy-nNk7RsEAE?ts=CAESABoWEhQSEgoHCOgPEAMYGxIHCOgPEAMYHCoHCgU6A0lOUg">Hotel Yash International Calicut</a> (₹2,273 per night)</li>
-          <!-- Add other hotels here -->
-        </ul>
-      </div>
-    </section>
-
-    <section class="restaurants section">
-      <div class="container">
-        <h2>Restaurants</h2>
-        <ul>
-          <li><a href="http://www.justloaf.in/">Just Loaf</a> <span class="rating">(4.5 stars)</span></li>
-          <!-- Add other restaurants here -->
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 Kozhikode Guide</p>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
