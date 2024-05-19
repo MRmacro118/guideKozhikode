@@ -33,6 +33,7 @@ input[type="text"] {
 
 button {
     padding: 10px 20px;
+    margin-top: 10px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -42,4 +43,8 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+#downloadBtn {
+    display: none; /* Hidden initially, shown after generating the image */
 }
